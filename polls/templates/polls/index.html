@@ -2,7 +2,7 @@
     <ul>
         {% for q in latest_question_list %}
         <li>
-            <a href="{% url 'polls:detail' q.id %}">
+            <a href="{% url 'polls:details' q.id %}">
                 {{q.question_text}}
             </a>
         </li>
